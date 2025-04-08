@@ -1,12 +1,10 @@
-package lk.ijse.mushroom.dbConnection;
+package lk.ijse.mushroom.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Connection;
-import java.sql.DriverManager;
 
-    public class DbConnection {
+public class DbConnection {
         private static DbConnection dbConnection;
         private Connection connection;
         private DbConnection() throws SQLException {
