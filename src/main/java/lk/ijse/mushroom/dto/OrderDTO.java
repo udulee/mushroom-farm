@@ -1,4 +1,4 @@
-package lk.ijse.mushroom.DTO;
+package lk.ijse.mushroom.dto;
 
 public class OrderDTO {
     private int id;
