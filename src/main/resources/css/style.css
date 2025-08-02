@@ -1,0 +1,6 @@
+.bgImage {
+    -fx-background-image: url("/image/mushroom.jpg");
+    /*-fx-background-size: cover;*/
+    /*-fx-background-repeat: no-repeat;*/
+    /*-fx-background-position:center;*/
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mushroom.controller.QualityCheckController">
+   <children>
+      <TextField prefHeight="51.0" prefWidth="324.0" style="-fx-background-color: #129990;" text="         Quality Check" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="351.0" fitWidth="324.0" layoutY="49.333333333333336" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="49.0">
+         <image>
+            <Image url="@../../../../../../../Downloads/AdobeStock_193754586_Preview.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="8.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView layoutX="386.0" layoutY="186.0" prefHeight="400.0" prefWidth="380.0" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="tabQCId" prefWidth="75.0" text="QC Id" />
+                <TableColumn fx:id="tabBatchId" prefWidth="75.0" text="Batch Id" />
+                  <TableColumn fx:id="tabQCDate" prefWidth="75.0" text="QC Date" />
+                  <TableColumn fx:id="tabStatus" prefWidth="75.0" text="Status" />
+                  <TableColumn fx:id="tabNote" prefWidth="75.0" text="Note" />
+              </columns>
+            </TableView>
+            <Button layoutX="340.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnAddButtonOnAction" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #8DD8FF;" text="Add">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="478.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnUpdateButtonOnAction" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #8DD8FF;" text="Update">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="614.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnDeleteButtonOnAction" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #8DD8FF;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <VBox layoutX="1.0" layoutY="88.0" prefHeight="309.0" prefWidth="324.0">
+               <children>
+                  <HBox prefHeight="46.0" prefWidth="324.0">
+                     <children>
+                        <Label style="-fx-background-color: #102E50;" text="QC Id" textFill="#f4efef">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="215.0">
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="324.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="72.0" style="-fx-background-color: #102E50;" text="Batch Id" textFill="#f4efef">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="215.0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="56.0" prefHeight="46.0" prefWidth="324.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="72.0" style="-fx-background-color: #102E50;" text="QC Date" textFill="#f4efef">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="215.0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="102.0" prefHeight="46.0" prefWidth="324.0">
+                     <children>
+                        <Label style="-fx-background-color: #102E50;" text="Status" textFill="#f4efef">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="215.0">
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="148.0" prefHeight="46.0" prefWidth="324.0">
+                     <children>
+                        <Label style="-fx-background-color: #102E50;" text="Note" textFill="#f4efef">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="215.0">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

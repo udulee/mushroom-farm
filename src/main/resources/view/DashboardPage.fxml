@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="1000.0" style="-fx-background-color: #f5f7fa;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Header -->
+        <HBox alignment="CENTER_LEFT" layoutX="40.0" layoutY="20.0" prefHeight="50.0" prefWidth="920.0" spacing="20.0">
+            <children>
+                <Label text="Dashboard" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="28.0"/>
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label text="By day" textFill="#666666">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0"
+                        style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-background-radius: 8;"
+                        text="Create new">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+
+        <!-- Main Content Area -->
+        <HBox layoutX="40.0" layoutY="90.0" prefHeight="480.0" prefWidth="920.0" spacing="30.0">
+            <children>
+                <!-- Left Side - Greeting and Tasks -->
+                <VBox prefHeight="480.0" prefWidth="550.0" spacing="25.0">
+                    <children>
+                        <!-- Greeting Card -->
+                        <HBox alignment="CENTER_LEFT" prefHeight="200.0"
+                              style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                              spacing="30.0">
+                            <padding>
+                                <Insets bottom="20.0" left="30.0" right="30.0" top="20.0"/>
+                            </padding>
+                            <children>
+                                <VBox spacing="15.0">
+                                    <children>
+                                        <Label text="Hi, George!" textFill="#333333">
+                                            <font>
+                                                <Font name="System Bold" size="32.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="What are we doing today?" textFill="#666666">
+                                            <font>
+                                                <Font size="16.0"/>
+                                            </font>
+                                        </Label>
+                                        <HBox spacing="15.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                    <children>
+                                                        <Circle fill="#ff6b6b" radius="6.0"/>
+                                                        <Label text="Check Calendar" textFill="#4a90e2"
+                                                               underline="true">
+                                                            <font>
+                                                                <Font size="14.0"/>
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                    <children>
+                                                        <Circle fill="#4ecdc4" radius="6.0"/>
+                                                        <Label text="Manage Wallet" textFill="#4a90e2" underline="true">
+                                                            <font>
+                                                                <Font size="14.0"/>
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                        <HBox spacing="15.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                    <children>
+                                                        <Circle fill="#45b7d1" radius="6.0"/>
+                                                        <Label text="Manage Workers" textFill="#4a90e2"
+                                                               underline="true">
+                                                            <font>
+                                                                <Font size="14.0"/>
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                    <children>
+                                                        <Circle fill="#96ceb4" radius="6.0"/>
+                                                        <Label text="Manage Projects" textFill="#4a90e2"
+                                                               underline="true">
+                                                            <font>
+                                                                <Font size="14.0"/>
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <Region HBox.hgrow="ALWAYS"/>
+                                <!-- Bear Character Placeholder -->
+                                <VBox alignment="CENTER" prefHeight="140.0" prefWidth="120.0"
+                                      style="-fx-background-color: #f0f0f0; -fx-background-radius: 60;">
+                                    <children>
+                                        <Label text="🐻" textFill="#333333">
+                                            <font>
+                                                <Font size="60.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="☕" textFill="#8b4513">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+
+                        <!-- Metrics Cards -->
+                        <HBox spacing="20.0">
+                            <children>
+                                <!-- Potential Monthly Profit -->
+                                <VBox prefHeight="140.0" prefWidth="125.0"
+                                      style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                            <children>
+                                                <Circle fill="#ff6b6b" radius="8.0"/>
+                                                <Region HBox.hgrow="ALWAYS"/>
+                                                <Label text="↑" textFill="#666666">
+                                                    <font>
+                                                        <Font size="16.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <Label text="Potential" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Monthly Profit" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="24,042,000" textFill="#333333">
+                                            <font>
+                                                <Font name="System Bold" size="16.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+
+                                <!-- Workers Wage This Month -->
+                                <VBox prefHeight="140.0" prefWidth="125.0"
+                                      style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                            <children>
+                                                <Circle fill="#4a90e2" radius="8.0"/>
+                                                <Region HBox.hgrow="ALWAYS"/>
+                                                <Label text="↑" textFill="#666666">
+                                                    <font>
+                                                        <Font size="16.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <Label text="Workers Wage" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="This Month" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="8,402,000" textFill="#333333">
+                                            <font>
+                                                <Font name="System Bold" size="16.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+
+                                <!-- Average Project Length -->
+                                <VBox prefHeight="140.0" prefWidth="125.0"
+                                      style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                            <children>
+                                                <Circle fill="#ffd93d" radius="8.0"/>
+                                                <Region HBox.hgrow="ALWAYS"/>
+                                                <Label text="↑" textFill="#666666">
+                                                    <font>
+                                                        <Font size="16.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <Label text="Average" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Project Length" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="2 weeks" textFill="#333333">
+                                            <font>
+                                                <Font name="System Bold" size="16.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+
+                                <!-- Average Income per Project -->
+                                <VBox prefHeight="140.0" prefWidth="125.0"
+                                      style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                            <children>
+                                                <Circle fill="#4ecdc4" radius="8.0"/>
+                                                <Region HBox.hgrow="ALWAYS"/>
+                                                <Label text="↑" textFill="#666666">
+                                                    <font>
+                                                        <Font size="16.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <Label text="Average" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Income per Project" textFill="#666666">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="12,000" textFill="#333333">
+                                            <font>
+                                                <Font name="System Bold" size="16.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <!-- Right Side - Notifications -->
+                <VBox prefHeight="480.0" prefWidth="340.0" spacing="20.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                            <children>
+                                <Circle fill="#e0e0e0" radius="8.0"/>
+                                <Label text="Notifications" textFill="#333333">
+                                    <font>
+                                        <Font name="System Bold" size="18.0"/>
+                                    </font>
+                                </Label>
+                                <Region HBox.hgrow="ALWAYS"/>
+                                <Label text="See all" textFill="#4a90e2" underline="true">
+                                    <font>
+                                        <Font size="14.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+
+                        <VBox spacing="15.0">
+                            <children>
+                                <!-- Notification 1 -->
+                                <HBox alignment="CENTER_LEFT" prefHeight="60.0"
+                                      style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                                      spacing="15.0">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <Circle fill="#ffd93d" radius="15.0"/>
+                                        <VBox spacing="2.0">
+                                            <children>
+                                                <Label text="You've added new project recently, with"
+                                                       textFill="#333333">
+                                                    <font>
+                                                        <Font size="12.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label text="no deadline" textFill="#333333">
+                                                    <font>
+                                                        <Font size="12.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <Region HBox.hgrow="ALWAYS"/>
+                                        <Circle fill="#e0e0e0" radius="4.0"/>
+                                    </children>
+                                </HBox>
+
+                                <!-- Notification 2 -->
+                                <HBox alignment="CENTER_LEFT" prefHeight="60.0"
+                                      style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                                      spacing="15.0">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <Circle fill="#ff6b6b" radius="15.0"/>
+                                        <VBox spacing="2.0">
+                                            <children>
+                                                <Label text="Project owner Adam requested a refund" textFill="#333333">
+                                                    <font>
+                                                        <Font size="12.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <Region HBox.hgrow="ALWAYS"/>
+                                        <Circle fill="#e0e0e0" radius="4.0"/>
+                                    </children>
+                                </HBox>
+
+                                <!-- Notification 3 -->
+                                <HBox alignment="CENTER_LEFT" prefHeight="60.0"
+                                      style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);"
+                                      spacing="15.0">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <Circle fill="#4a90e2" radius="15.0"/>
+                                        <VBox spacing="2.0">
+                                            <children>
+                                                <Label text="Today it's Talia's anniversary!" textFill="#333333">
+                                                    <font>
+                                                        <Font size="12.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label text="Send her a happy birthday" textFill="#666666">
+                                                    <font>
+                                                        <Font size="11.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <Region HBox.hgrow="ALWAYS"/>
+                                        <Circle fill="#e0e0e0" radius="4.0"/>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

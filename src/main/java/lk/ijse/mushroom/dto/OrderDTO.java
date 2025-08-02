@@ -1,7 +1,16 @@
 package lk.ijse.mushroom.dto;
 
+import lombok.*;
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+
 public class OrderDTO {
-    private int id;
-    private String First_name;
-    private String Last_name;
+    private int OrderId;
+    private int CustomerId;
+    private String PaymentStatus;
+    private String OrderDate;
+    private String TotalAmount;
 }
